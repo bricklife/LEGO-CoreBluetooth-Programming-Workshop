@@ -83,7 +83,7 @@ extension Hub: CBPeripheralDelegate {
         }
         
         // Step 4: Discover Characteristic
-        peripheral.discoverCharacteristics(nil, for: service)
+        peripheral.discoverCharacteristics([characteristicUUID], for: service)
     }
     
     func peripheral(_ peripheral: CBPeripheral, didDiscoverCharacteristicsFor service: CBService, error: Error?) {
