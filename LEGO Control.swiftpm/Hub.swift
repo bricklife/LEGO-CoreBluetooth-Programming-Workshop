@@ -59,7 +59,7 @@ extension Hub: CBCentralManagerDelegate {
         peripheral.delegate = self
         
         // Step 3: Discover Service
-        peripheral.discoverServices(nil)
+        peripheral.discoverServices([serviceUUID])
     }
     
     func centralManager(_ central: CBCentralManager, didFailToConnect peripheral: CBPeripheral, error: Error?) {
