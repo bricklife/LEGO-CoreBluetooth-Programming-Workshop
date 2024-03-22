@@ -23,7 +23,7 @@ final class Hub: NSObject, ObservableObject {
         guard centralManager.state == .poweredOn else { return }
         
         // Step 1: Scan
-        centralManager.scanForPeripherals(withServices: nil)
+        centralManager.scanForPeripherals(withServices: [serviceUUID])
     }
     
     func cancelConnecting() {
