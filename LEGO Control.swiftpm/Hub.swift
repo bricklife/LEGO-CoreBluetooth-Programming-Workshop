@@ -97,7 +97,7 @@ extension Hub: CBPeripheralDelegate {
         isReady = true
         
         // Step 6: Enable Notifications
-        // peripheral.setNotifyValue(true, for: characteristic)
+        peripheral.setNotifyValue(true, for: characteristic)
     }
     
     func peripheral(_ peripheral: CBPeripheral, didUpdateValueFor characteristic: CBCharacteristic, error: Error?) {
