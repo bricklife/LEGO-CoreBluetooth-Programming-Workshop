@@ -111,9 +111,7 @@ extension Hub {
         print("[write]", data.hexString)
         
         // Step 5: Write
-        // connectingPeripheral.writeValue(data, for: lwpCharacteristic, type: .withResponse)
-        // or
-        // connectingPeripheral.writeValue(data, for: lwpCharacteristic, type: .withoutResponse)
+        connectingPeripheral.writeValue(data, for: lwpCharacteristic, type: .withoutResponse)
     }
 }
 
