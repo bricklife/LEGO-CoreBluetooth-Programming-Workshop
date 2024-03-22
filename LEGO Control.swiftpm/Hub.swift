@@ -50,7 +50,7 @@ extension Hub: CBCentralManagerDelegate {
             connectingPeripheral = peripheral
             
             // Step 2: Connect
-            // centralManager.connect(peripheral)
+            centralManager.connect(peripheral)
         }
     }
     
